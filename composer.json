@@ -1,0 +1,15 @@
+{
+   "name": "VilledeMontreal/plugin-etl",
+   "require": {
+        "league/csv": "^9.0",
+        "VilledeMontreal/retl": "*"
+    },
+    "require-dev": {
+        "glpi-project/tools": "^0.1"
+    },
+    "config": {
+        "platform": {
+            "php": "7.1"
+        }
+    }
+}

@@ -1,0 +1,228 @@
+/* ---------------------------------------------- */
+/* Responsive containers (based on Bootstrap)
+/* ---------------------------------------------- */ 
+.plugin-etl__container
+{
+   display: block;
+   margin: 0 auto;
+   max-width: 100%;
+   width:100%;
+}
+
+.plugin-etl__container *
+{
+   box-sizing: border-box;
+}
+
+pre {
+   text-align: left;
+}
+
+@media (min-width: 576px)
+{
+   .plugin-etl__container
+   {
+      max-width: 576px;
+   }   
+}
+
+@media (min-width: 768px)
+{
+   .plugin-etl__container
+   {
+      max-width: 768px;
+   }   
+}
+
+@media (min-width: 992px)
+{
+   .plugin-etl__container
+   {
+      max-width: 992px;
+   }   
+}
+
+@media (min-width: 1024px)
+{
+   .plugin-etl__container
+   {
+      max-width: 1024px;
+   }   
+}
+
+@media (min-width: 1200px)
+{
+   .plugin-etl__container
+   {
+      max-width: 1200px;
+   }   
+}
+
+
+
+/* ---------------------------------------------- */
+/* Forms */
+/* ---------------------------------------------- */ 
+.plugin-etl__csvimport form,
+#page .plugin-etl__csvimport form
+{
+   display: block;
+   margin: 0 auto;
+   max-width:none;
+   width: 100%;
+}
+
+@media (min-width: 992px)
+{
+   .plugin-etl__csvimport form,
+   #page .plugin-etl__csvimport form
+   {
+      max-width: 768px;
+   }
+}
+@media (min-width: 1024px)
+{
+   .plugin-etl__csvimport form,
+   #page .plugin-etl__csvimport form
+   {
+      max-width: 992px;
+   }
+}
+@media (min-width: 1200px)
+{
+   .plugin-etl__csvimport form,
+   #page .plugin-etl__csvimport form
+   {
+      max-width: 1024px;
+   }
+}
+
+.plugin-etl__input-group
+{
+   display: block;
+   margin: 0.1rem auto;
+   position: relative;
+   text-align: left;
+   width: 100%;
+}
+
+.plugin-etl__input-group label,
+.plugin-etl__input-group input
+{
+   display: block;
+   margin: 10px 0;
+   width: 100%;
+}
+
+@media (min-width: 992px)
+{
+   .plugin-etl__input-group input
+   {
+      display: inline-block;
+      width: 60%;
+   }
+   
+   .plugin-etl__input-group label
+   {
+      display: inline-block;
+      width: 30%;
+   }
+}
+
+.plugin-etl_form input[type=file]
+{
+   min-width: 100px;
+}
+
+@media (min-width: 992px)
+{
+   .plugin-etl_form input[type=file]
+   {
+      min-width: 400px;
+   }
+}
+
+.plugin-etl__form-actions
+{
+   display: block;
+   margin: 1rem auto;
+}
+
+
+
+/* ---------------------------------------------- */
+/* Dev related */
+/* ---------------------------------------------- */ 
+
+.plugin-etl__dev {
+   border-top: 3px solid #888;
+   margin: 3rem auto 1rem auto;
+   max-width: 1024px;
+   padding: 1rem 0;
+   text-align: left;
+   width: 100%;
+}
+
+/* ---------------------------------------------- */
+/* Report */
+/* ---------------------------------------------- */ 
+.plugin-etl__csvimport__report
+{
+   background-color: #fff;
+   border: 3px solid #eee;
+   max-width: 992px;
+   margin: 0 auto;
+   padding: 2rem 2rem;
+}
+
+.plugin-etl__section-error > table,
+table.plugin-etl__section-error__recursing
+{
+   border-bottom: 1px solid #eee;
+   margin: 1rem auto;
+}
+
+.plugin-etl__section-error table
+{
+   margin: 1rem auto;
+   width: 100%;
+}
+
+.plugin-etl__section-error table td
+{
+   overflow-wrap: break-word;
+   text-align: left;
+}
+
+table.plugin-etl__section-error__recursing
+{
+   border-bottom: 3px solid #eee;
+}
+
+
+/*
+table.plugin-etl__error-msg > tr > td,
+table.plugin-etl__error-msg > tbody > tr > td
+{
+   border-bottom: 1px solid #eee;
+   padding-bottom: 1rem;
+   padding-top: 1rem;
+}
+*/
+
+table.plugin-etl__error-msg > tr > td:first-child,
+table.plugin-etl__error-msg > tbody > tr > td:first-child
+{
+   padding-right: 10px;
+   max-width: 300px;
+   width: 30%;
+}
+
+@media (min-width: 992px)
+{
+   table.plugin-etl__error-msg > tr > td:first-child,
+   table.plugin-etl__error-msg > tbody > tr > td:first-child
+   {
+      width: 300px;
+   }
+}

@@ -294,14 +294,14 @@ class PluginETLSetupLogic
       
       //Create editable basepath, if missing.
       if ( ! is_writable($this->getOwnEditableBasePath())) {
-         self::makeDirOrDie($this->getOwnEditableBasePath());
+         Paths::makeDirOrDie($this->getOwnEditableBasePath());
       }
       
       //Create mandatory editable sub directories, if missing.
       foreach($this->getMandatoryEditableSubdirectories() as $dir) {
          $path = $this->getOwnEditableBasePath().DIRECTORY_SEPARATOR.$dir;
          if ( ! is_writable($path)) {
-            self::makeDirOrDie($path);
+            Paths::makeDirOrDie($path);
          }
       };
    }

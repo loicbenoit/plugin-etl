@@ -2,14 +2,17 @@
    "name": "VilledeMontreal/plugin-etl",
    "require": {
         "league/csv": "^9.0",
-        "VilledeMontreal/retl": "*"
-    },
-    "require-dev": {
-        "glpi-project/tools": "^0.1"
+        "VilleDeMontreal/retl": "dev-master"
     },
     "config": {
         "platform": {
             "php": "7.1"
         }
-    }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/loicbenoit/retl"
+        }
+    ]
 }
